@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Abdul Tech</title>
 
 <style>
+
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -40,9 +42,17 @@ nav a {
     font-weight: bold;
 }
 
+nav a:hover {
+    color: #38bdf8;
+}
+
 section {
     padding: 60px 20px;
     text-align: center;
+}
+
+.hero {
+    background: #101010;
 }
 
 .hero h2 {
@@ -81,10 +91,11 @@ section {
     padding: 25px;
     width: 280px;
     border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .service h3 {
-    color: #1683ff;
+    color: #38bdf8;
 }
 
 .price {
@@ -94,6 +105,25 @@ section {
 
 #about {
     background: #1d2227;
+}
+
+#services {
+    background: #101010;
+}
+
+#portfolio {
+    background: #151a20;
+}
+
+.portfolio-card {
+    background: #20262d;
+    padding: 25px;
+    width: 280px;
+    border-radius: 15px;
+}
+
+.portfolio-card h3 {
+    color: #38bdf8;
 }
 
 #contact {
@@ -106,7 +136,14 @@ footer {
     padding: 30px;
 }
 
+footer a {
+    color: white;
+    margin: 8px;
+    text-decoration: none;
+}
+
 @media (max-width: 600px) {
+
     .hero h2 {
         font-size: 30px;
     }
@@ -115,132 +152,267 @@ footer {
         display: inline-block;
         margin: 6px;
     }
+
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
+
     <h1>🚀 ABDUL TECH</h1>
+
     <p>Technology Made Simple</p>
 
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
     </nav>
+
 </header>
 
+
+<!-- HOME -->
+
 <section class="hero" id="home">
+
     <h2>Welcome to Abdul Tech</h2>
+
     <p>
         We provide modern technology solutions
         for individuals and businesses.
     </p>
 
-    <a class="button" href="#services">View Our Services</a>
+    <a class="button" href="#services">
+        View Our Services
+    </a>
+
 </section>
+
+
+<!-- ABOUT -->
 
 <section id="about">
+
     <h2>About Abdul Tech</h2>
+
     <p>
         Abdul Tech provides affordable digital,
-        design and technology solutions for individuals
-        and businesses.
+        design and technology solutions for
+        individuals and businesses.
     </p>
+
 </section>
 
+
+<!-- SERVICES -->
+
 <section id="services">
+
     <h2>Our Services & Prices</h2>
 
     <div class="services">
 
         <div class="service">
+
             <h3>🌐 Website Design</h3>
+
             <p>
                 Modern and mobile-friendly websites
                 for businesses and individuals.
             </p>
+
             <p class="price">₦20,000</p>
 
             <a class="button whatsapp"
                href="https://wa.me/2349023171830?text=Hello%20Abdul%20Tech%2C%20I%20want%20a%20website."
                target="_blank">
+
                 Order Now
+
             </a>
+
         </div>
 
+
         <div class="service">
+
             <h3>🎨 Logo & Poster Design</h3>
+
             <p>
                 Professional logos and promotional
                 posters for your business.
             </p>
+
             <p class="price">₦5,000</p>
 
             <a class="button whatsapp"
                href="https://wa.me/2349023171830?text=Hello%20Abdul%20Tech%2C%20I%20want%20a%20logo%20or%20poster."
                target="_blank">
+
                 Order Now
+
             </a>
+
         </div>
 
+
         <div class="service">
+
             <h3>📱 Social Media Setup</h3>
+
             <p>
                 Help setting up and organizing
-                your business social-media presence.
+                your business social media.
             </p>
+
             <p class="price">₦5,000</p>
 
             <a class="button whatsapp"
                href="https://wa.me/2349023171830?text=Hello%20Abdul%20Tech%2C%20I%20want%20social%20media%20setup."
                target="_blank">
+
                 Order Now
+
             </a>
+
         </div>
 
+
         <div class="service">
+
             <h3>🤖 Simple AI Setup</h3>
+
             <p>
                 Basic AI tools and automation
                 setup for individuals and businesses.
             </p>
+
             <p class="price">₦15,000</p>
 
             <a class="button whatsapp"
                href="https://wa.me/2349023171830?text=Hello%20Abdul%20Tech%2C%20I%20want%20an%20AI%20setup."
                target="_blank">
+
                 Order Now
+
             </a>
+
         </div>
 
     </div>
+
 </section>
 
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio">
+
+    <h2>Our Portfolio</h2>
+
+    <p>
+        Here are some sample projects from Abdul Tech.
+    </p>
+
+    <div class="services">
+
+
+        <div class="portfolio-card">
+
+            <h3>🌐 Sample Website</h3>
+
+            <p>
+                Modern website design for
+                businesses and individuals.
+            </p>
+
+        </div>
+
+
+        <div class="portfolio-card">
+
+            <h3>🎨 Sample Logo</h3>
+
+            <p>
+                Creative logo and branding
+                design for businesses.
+            </p>
+
+        </div>
+
+
+        <div class="portfolio-card">
+
+            <h3>🤖 Sample AI Project</h3>
+
+            <p>
+                A simple AI-powered
+                digital project.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
 <section id="contact">
+
     <h2>Contact Abdul Tech</h2>
 
-    <p>📧 Email: abdultech11@gmail.com</p>
-    <p>📞 WhatsApp: +2349023171830</p>
+    <p>
+        📧 Email: abdultech11@gmail.com
+    </p>
+
+    <p>
+        📞 WhatsApp: +2349023171830
+    </p>
+
 
     <a class="button"
        href="mailto:abdultech11@gmail.com">
+
         📧 Send Email
+
     </a>
+
 
     <a class="button whatsapp"
        href="https://wa.me/2349023171830"
        target="_blank">
+
         💬 WhatsApp Us
+
     </a>
+
 </section>
 
+
+<!-- FOOTER -->
+
 <footer>
-    <p>© 2026 Abdul Tech. All rights reserved.</p>
+
+    <p>
+        © 2026 Abdul Tech.
+        All rights reserved.
+    </p>
+
+    <a href="#">Instagram</a>
+
+    <a href="#">Facebook</a>
+
+    <a href="#">TikTok</a>
+
 </footer>
 
 </body>
-                </html>
+    </html>
