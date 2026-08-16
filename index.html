@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +26,12 @@ header {
     padding: 25px 15px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 34px;
+.logo {
+    width: 180px;
+    max-width: 80%;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto 15px;
 }
 
 header p {
@@ -42,21 +45,21 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover {
-    color: #38bdf8;
-}
-
 section {
     padding: 60px 20px;
     text-align: center;
 }
 
 .hero {
-    background: #101010;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero h2 {
-    font-size: 40px;
+.hero h1 {
+    font-size: 42px;
 }
 
 .hero p {
@@ -77,6 +80,10 @@ section {
 
 .whatsapp {
     background: #25D366;
+}
+
+.about {
+    background: #1d2227;
 }
 
 .services {
@@ -103,15 +110,7 @@ section {
     font-weight: bold;
 }
 
-#about {
-    background: #1d2227;
-}
-
-#services {
-    background: #101010;
-}
-
-#portfolio {
+.portfolio {
     background: #151a20;
 }
 
@@ -126,7 +125,7 @@ section {
     color: #38bdf8;
 }
 
-#contact {
+.contact {
     background: #1d2735;
 }
 
@@ -136,16 +135,10 @@ footer {
     padding: 30px;
 }
 
-footer a {
-    color: white;
-    margin: 8px;
-    text-decoration: none;
-}
-
 @media (max-width: 600px) {
 
-    .hero h2 {
-        font-size: 30px;
+    .hero h1 {
+        font-size: 32px;
     }
 
     nav a {
@@ -160,7 +153,13 @@ footer a {
 
 <body>
 
+<!-- HEADER -->
+
 <header>
+
+    <img src="logo.png"
+         alt="Abdul Tech Logo"
+         class="logo">
 
     <h1>🚀 ABDUL TECH</h1>
 
@@ -181,7 +180,7 @@ footer a {
 
 <section class="hero" id="home">
 
-    <h2>Welcome to Abdul Tech</h2>
+    <h1>Welcome to Abdul Tech</h1>
 
     <p>
         We provide modern technology solutions
@@ -197,7 +196,7 @@ footer a {
 
 <!-- ABOUT -->
 
-<section id="about">
+<section class="about" id="about">
 
     <h2>About Abdul Tech</h2>
 
@@ -217,6 +216,7 @@ footer a {
     <h2>Our Services & Prices</h2>
 
     <div class="services">
+
 
         <div class="service">
 
@@ -312,7 +312,7 @@ footer a {
 
 <!-- PORTFOLIO -->
 
-<section id="portfolio">
+<section class="portfolio" id="portfolio">
 
     <h2>Our Portfolio</h2>
 
@@ -365,7 +365,7 @@ footer a {
 
 <!-- CONTACT -->
 
-<section id="contact">
+<section class="contact" id="contact">
 
     <h2>Contact Abdul Tech</h2>
 
@@ -406,13 +406,8 @@ footer a {
         All rights reserved.
     </p>
 
-    <a href="#">Instagram</a>
-
-    <a href="#">Facebook</a>
-
-    <a href="#">TikTok</a>
-
 </footer>
 
+
 </body>
-    </html>
+                </html>
