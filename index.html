@@ -7,7 +7,6 @@
 <title>Abdul Tech</title>
 
 <style>
-
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -34,6 +33,10 @@ header {
     margin: 0 auto 15px;
 }
 
+header h1 {
+    margin: 10px 0;
+}
+
 header p {
     font-size: 18px;
 }
@@ -58,8 +61,8 @@ section {
     align-items: center;
 }
 
-.hero h1 {
-    font-size: 42px;
+.hero h2 {
+    font-size: 40px;
 }
 
 .hero p {
@@ -76,6 +79,8 @@ section {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    border: none;
+    cursor: pointer;
 }
 
 .whatsapp {
@@ -98,7 +103,6 @@ section {
     padding: 25px;
     width: 280px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .service h3 {
@@ -125,6 +129,43 @@ section {
     color: #38bdf8;
 }
 
+.order {
+    background: #172033;
+}
+
+.order-form {
+    max-width: 550px;
+    margin: auto;
+    text-align: left;
+}
+
+.order-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.order-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.order-form .button {
+    width: 100%;
+    margin-top: 20px;
+}
+
 .contact {
     background: #1d2735;
 }
@@ -136,24 +177,19 @@ footer {
 }
 
 @media (max-width: 600px) {
-
-    .hero h1 {
-        font-size: 32px;
+    .hero h2 {
+        font-size: 30px;
     }
 
     nav a {
         display: inline-block;
         margin: 6px;
     }
-
 }
-
 </style>
 </head>
 
 <body>
-
-<!-- HEADER -->
 
 <header>
 
@@ -170,17 +206,16 @@ footer {
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#portfolio">Portfolio</a>
+        <a href="#order">Order</a>
         <a href="#contact">Contact</a>
     </nav>
 
 </header>
 
 
-<!-- HOME -->
-
 <section class="hero" id="home">
 
-    <h1>Welcome to Abdul Tech</h1>
+    <h2>Welcome to Abdul Tech</h2>
 
     <p>
         We provide modern technology solutions
@@ -193,8 +228,6 @@ footer {
 
 </section>
 
-
-<!-- ABOUT -->
 
 <section class="about" id="about">
 
@@ -209,153 +242,62 @@ footer {
 </section>
 
 
-<!-- SERVICES -->
-
 <section id="services">
 
     <h2>Our Services & Prices</h2>
 
     <div class="services">
 
-
         <div class="service">
-
             <h3>🌐 Website Design</h3>
-
-            <p>
-                Modern and mobile-friendly websites
-                for businesses and individuals.
-            </p>
-
+            <p>Modern websites for businesses and individuals.</p>
             <p class="price">₦20,000</p>
-
-            <a class="button whatsapp"
-               href="https://wa.me/2349023171830?text=Hello%20Abdul%20Tech%2C%20I%20want%20a%20website."
-               target="_blank">
-
-                Order Now
-
-            </a>
-
         </div>
 
-
         <div class="service">
-
             <h3>🎨 Logo & Poster Design</h3>
-
-            <p>
-                Professional logos and promotional
-                posters for your business.
-            </p>
-
+            <p>Professional logos and promotional posters.</p>
             <p class="price">₦5,000</p>
-
-            <a class="button whatsapp"
-               href="https://wa.me/2349023171830?text=Hello%20Abdul%20Tech%2C%20I%20want%20a%20logo%20or%20poster."
-               target="_blank">
-
-                Order Now
-
-            </a>
-
         </div>
 
-
         <div class="service">
-
             <h3>📱 Social Media Setup</h3>
-
-            <p>
-                Help setting up and organizing
-                your business social media.
-            </p>
-
+            <p>Help setting up your business social media.</p>
             <p class="price">₦5,000</p>
-
-            <a class="button whatsapp"
-               href="https://wa.me/2349023171830?text=Hello%20Abdul%20Tech%2C%20I%20want%20social%20media%20setup."
-               target="_blank">
-
-                Order Now
-
-            </a>
-
         </div>
 
-
         <div class="service">
-
             <h3>🤖 Simple AI Setup</h3>
-
-            <p>
-                Basic AI tools and automation
-                setup for individuals and businesses.
-            </p>
-
+            <p>Basic AI tools and automation setup.</p>
             <p class="price">₦15,000</p>
-
-            <a class="button whatsapp"
-               href="https://wa.me/2349023171830?text=Hello%20Abdul%20Tech%2C%20I%20want%20an%20AI%20setup."
-               target="_blank">
-
-                Order Now
-
-            </a>
-
         </div>
 
     </div>
 
 </section>
 
-
-<!-- PORTFOLIO -->
 
 <section class="portfolio" id="portfolio">
 
     <h2>Our Portfolio</h2>
 
-    <p>
-        Here are some sample projects from Abdul Tech.
-    </p>
+    <p>Sample projects from Abdul Tech.</p>
 
     <div class="services">
 
-
         <div class="portfolio-card">
-
             <h3>🌐 Sample Website</h3>
-
-            <p>
-                Modern website design for
-                businesses and individuals.
-            </p>
-
+            <p>Modern website design for businesses.</p>
         </div>
 
-
         <div class="portfolio-card">
-
             <h3>🎨 Sample Logo</h3>
-
-            <p>
-                Creative logo and branding
-                design for businesses.
-            </p>
-
+            <p>Creative logo and branding design.</p>
         </div>
 
-
         <div class="portfolio-card">
-
             <h3>🤖 Sample AI Project</h3>
-
-            <p>
-                A simple AI-powered
-                digital project.
-            </p>
-
+            <p>A simple AI-powered digital project.</p>
         </div>
 
     </div>
@@ -363,20 +305,94 @@ footer {
 </section>
 
 
-<!-- CONTACT -->
+<section class="order" id="order">
+
+    <h2>📝 Place an Order</h2>
+
+    <p>
+        Fill in your details and we'll receive your
+        order on WhatsApp.
+    </p>
+
+    <form class="order-form"
+          onsubmit="sendOrder(); return false;">
+
+        <label for="name">Your Name</label>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+        >
+
+
+        <label for="phone">Your WhatsApp Number</label>
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="e.g. 07012345678"
+            required
+        >
+
+
+        <label for="service">Choose a Service</label>
+
+        <select id="service" required>
+
+            <option value="">
+                Select a service
+            </option>
+
+            <option value="Website Design - ₦20,000">
+                Website Design - ₦20,000
+            </option>
+
+            <option value="Logo & Poster Design - ₦5,000">
+                Logo & Poster Design - ₦5,000
+            </option>
+
+            <option value="Social Media Setup - ₦5,000">
+                Social Media Setup - ₦5,000
+            </option>
+
+            <option value="Simple AI Setup - ₦15,000">
+                Simple AI Setup - ₦15,000
+            </option>
+
+        </select>
+
+
+        <label for="details">Tell us what you need</label>
+
+        <textarea
+            id="details"
+            placeholder="Describe what you want..."
+            required
+        ></textarea>
+
+
+        <button
+            type="submit"
+            class="button whatsapp">
+
+            💬 Send Order on WhatsApp
+
+        </button>
+
+    </form>
+
+</section>
+
 
 <section class="contact" id="contact">
 
     <h2>Contact Abdul Tech</h2>
 
-    <p>
-        📧 Email: abdultech11@gmail.com
-    </p>
+    <p>📧 Email: abdultech11@gmail.com</p>
 
-    <p>
-        📞 WhatsApp: +2349023171830
-    </p>
-
+    <p>📞 WhatsApp: +2349023171830</p>
 
     <a class="button"
        href="mailto:abdultech11@gmail.com">
@@ -384,7 +400,6 @@ footer {
         📧 Send Email
 
     </a>
-
 
     <a class="button whatsapp"
        href="https://wa.me/2349023171830"
@@ -397,8 +412,6 @@ footer {
 </section>
 
 
-<!-- FOOTER -->
-
 <footer>
 
     <p>
@@ -409,5 +422,42 @@ footer {
 </footer>
 
 
+<script>
+
+function sendOrder() {
+
+    const name =
+        document.getElementById("name").value;
+
+    const phone =
+        document.getElementById("phone").value;
+
+    const service =
+        document.getElementById("service").value;
+
+    const details =
+        document.getElementById("details").value;
+
+    const message =
+        "Hello Abdul Tech!%0A%0A" +
+        "New Order%0A" +
+        "Name: " + encodeURIComponent(name) + "%0A" +
+        "Customer WhatsApp: " + encodeURIComponent(phone) + "%0A" +
+        "Service: " + encodeURIComponent(service) + "%0A" +
+        "Details: " + encodeURIComponent(details);
+
+    const whatsappNumber = "2349023171830";
+
+    window.open(
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        message,
+        "_blank"
+    );
+}
+
+</script>
+
 </body>
-                </html>
+    </html>
