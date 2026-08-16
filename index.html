@@ -41,12 +41,8 @@ nav a {
 }
 
 section {
-    padding: 70px 20px;
+    padding: 60px 20px;
     text-align: center;
-}
-
-.hero {
-    background: #101010;
 }
 
 .hero h2 {
@@ -60,8 +56,8 @@ section {
 
 .button {
     display: inline-block;
-    padding: 15px 30px;
-    margin: 15px 5px;
+    padding: 14px 28px;
+    margin: 12px 5px;
     border-radius: 8px;
     background: #087cff;
     color: white;
@@ -91,6 +87,11 @@ section {
     color: #1683ff;
 }
 
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
 #about {
     background: #1d2227;
 }
@@ -105,15 +106,14 @@ footer {
     padding: 30px;
 }
 
-footer a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-}
-
 @media (max-width: 600px) {
     .hero h2 {
         font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
     }
 }
 </style>
@@ -135,74 +135,112 @@ footer a {
 
 <section class="hero" id="home">
     <h2>Welcome to Abdul Tech</h2>
-
     <p>
         We provide modern technology solutions
         for individuals and businesses.
     </p>
 
-    <a class="button" href="#contact">Contact Us</a>
+    <a class="button" href="#services">View Our Services</a>
 </section>
 
 <section id="about">
     <h2>About Abdul Tech</h2>
-
     <p>
-        Abdul Tech is a technology company focused on
-        digital solutions, websites, mobile solutions
-        and artificial intelligence.
+        Abdul Tech provides affordable digital,
+        design and technology solutions for individuals
+        and businesses.
     </p>
 </section>
 
 <section id="services">
-    <h2>Our Services</h2>
+    <h2>Our Services & Prices</h2>
 
     <div class="services">
 
         <div class="service">
-            <h3>💻 Web Development</h3>
-            <p>Modern and mobile-friendly websites for businesses.</p>
+            <h3>🌐 Website Design</h3>
+            <p>
+                Modern and mobile-friendly websites
+                for businesses and individuals.
+            </p>
+            <p class="price">₦20,000</p>
+
+            <a class="button whatsapp"
+               href="https://wa.me/2349023171830?text=Hello%20Abdul%20Tech%2C%20I%20want%20a%20website."
+               target="_blank">
+                Order Now
+            </a>
         </div>
 
         <div class="service">
-            <h3>📱 Mobile Solutions</h3>
-            <p>Useful digital solutions for mobile users.</p>
+            <h3>🎨 Logo & Poster Design</h3>
+            <p>
+                Professional logos and promotional
+                posters for your business.
+            </p>
+            <p class="price">₦5,000</p>
+
+            <a class="button whatsapp"
+               href="https://wa.me/2349023171830?text=Hello%20Abdul%20Tech%2C%20I%20want%20a%20logo%20or%20poster."
+               target="_blank">
+                Order Now
+            </a>
         </div>
 
         <div class="service">
-            <h3>🤖 AI Solutions</h3>
-            <p>Smart AI-powered tools and applications.</p>
+            <h3>📱 Social Media Setup</h3>
+            <p>
+                Help setting up and organizing
+                your business social-media presence.
+            </p>
+            <p class="price">₦5,000</p>
+
+            <a class="button whatsapp"
+               href="https://wa.me/2349023171830?text=Hello%20Abdul%20Tech%2C%20I%20want%20social%20media%20setup."
+               target="_blank">
+                Order Now
+            </a>
+        </div>
+
+        <div class="service">
+            <h3>🤖 Simple AI Setup</h3>
+            <p>
+                Basic AI tools and automation
+                setup for individuals and businesses.
+            </p>
+            <p class="price">₦15,000</p>
+
+            <a class="button whatsapp"
+               href="https://wa.me/2349023171830?text=Hello%20Abdul%20Tech%2C%20I%20want%20an%20AI%20setup."
+               target="_blank">
+                Order Now
+            </a>
         </div>
 
     </div>
 </section>
 
 <section id="contact">
-    <h2>Contact Us</h2>
+    <h2>Contact Abdul Tech</h2>
 
     <p>📧 Email: abdultech11@gmail.com</p>
-    <p>📞 Phone: +2349023171830</p>
+    <p>📞 WhatsApp: +2349023171830</p>
 
-    <a class="button" href="mailto:abdultech11@gmail.com">
-        📧 Send Us an Email
+    <a class="button"
+       href="mailto:abdultech11@gmail.com">
+        📧 Send Email
     </a>
-
-    <br>
 
     <a class="button whatsapp"
        href="https://wa.me/2349023171830"
        target="_blank">
-        💬 Chat on WhatsApp
+        💬 WhatsApp Us
     </a>
 </section>
 
 <footer>
     <p>© 2026 Abdul Tech. All rights reserved.</p>
-
-    <a href="#">Instagram</a>
-    <a href="#">Facebook</a>
-    <a href="#">TikTok</a>
 </footer>
 
 </body>
-  </html>
+                </html>
